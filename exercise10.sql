@@ -1,0 +1,2 @@
+SELECT DISTINCT(UPPER(nome)) FROM times as A INNER JOIN campeoes as B ON A.sigla = B.sigla_time;
+SELECT DISTINCT (LOWER(nome)) FROM times as A LEFT JOIN campeoes as B ON A.sigla = B.sigla_time WHERE B.sigla_time IS NULL;
